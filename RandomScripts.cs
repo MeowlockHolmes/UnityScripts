@@ -71,3 +71,7 @@ Physics.gravity = new Vector3(0, -9.8f * 3, 0);
 
 //Grounded
 isGrounded = Physics2D.OverlapCircle(groundCheckPosition.position, groundCheckRadius, whatIsGround);
+
+//Compare 2 objects
+if(GameObject.ReferenceEquals( firstGameObject, secondGameObject))
+       Debug.Log("first and second are the same");
